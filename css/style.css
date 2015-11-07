@@ -1,0 +1,172 @@
+body {
+  background-color: #F4EBD8; }
+
+section.theme-color {
+  background-color: #F4EBD8; }
+section.theme-color a {
+  color: #A82E45; }
+section.theme-color a:hover {
+  color: #3A3D3F; }
+
+section.inverse-color {
+  background-color: #A76050; }
+section.inverse-color a {
+  color: #ccc; }
+section.inverse-color a:hover {
+  color: white; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 25px;
+  cursor: pointer; }
+@media only screen and (max-width: 40em) {
+  .hamburger-menu {
+    width: 25px;
+    height: 20px; } }
+
+.bar, .bar:after, .bar:before {
+  width: 30px;
+  height: 5px; }
+@media only screen and (max-width: 40em) {
+  .bar, .bar:after, .bar:before {
+    width: 25px;
+    height: 4px; } }
+
+.bar {
+  position: relative;
+  transform: translateY(10px);
+  background: #3A3D3F;
+  transition: all 0ms 300ms; }
+@media only screen and (max-width: 40em) {
+  .bar {
+    transform: translateY(8px); } }
+
+.bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: #3A3D3F;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+@media only screen and (max-width: 40em) {
+  .bar:before {
+    bottom: 8px; } }
+
+.bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: #3A3D3F;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+@media only screen and (max-width: 40em) {
+  .bar:after {
+    top: 8px; } }
+
+.btn-group.open .bar {
+  background: rgba(255, 255, 255, 0); }
+.btn-group.open .bar:before {
+  background-color: #A76050; }
+.btn-group.open .bar:after {
+  background-color: #A76050; }
+.btn-group.open .bar:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+.btn-group.open .bar:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.dropdown-menu {
+  background-color: #F4EBD8; }
+.dropdown-menu li a {
+  cursor: pointer;
+  color: #A82E45; }
+.dropdown-menu li a:hover {
+  color: #F4EBD8;
+  background-color: #A76050; }
+
+.welcome {
+  display: inline-block;
+  background: url(../img/welcome.jpg) top center;
+  background-size: cover;
+  width: 100%; }
+@media only screen and (min-width: 64.0625em) {
+  .welcome {
+    background-attachment: fixed; } }
+.welcome .btn-group {
+  margin: 30px auto 100px 30px; }
+@media only screen and (max-width: 40em) {
+  .welcome .btn-group {
+    margin: 20px auto 100px 20px; } }
+.welcome .btn-group button {
+  background-color: transparent; }
+.welcome .btn-group button i {
+  font-size: 30px; }
+.welcome .sketch {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: url(../img/logo.svg);
+  background-size: 100% 100%; }
+@media only screen and (max-width: 64em) {
+  .welcome .sketch {
+    width: 160px; } }
+@media only screen and (max-width: 40em) {
+  .welcome .sketch {
+    width: 120px; } }
+@media only screen and (max-width: 64em) {
+  .welcome .sketch {
+    height: 160px; } }
+@media only screen and (max-width: 40em) {
+  .welcome .sketch {
+    height: 120px; } }
+.welcome h1 {
+  color: #3A3D3F;
+  font-size: 61px;
+  font-family: 'Rock Salt', cursive;
+  letter-spacing: 0.1em; }
+@media only screen and (max-width: 64em) {
+  .welcome h1 {
+    font-size: 41px; } }
+@media only screen and (max-width: 40em) {
+  .welcome h1 {
+    font-size: 21px; } }
+.welcome h1.sub-title {
+  font-size: 0.9em; }
+.welcome .start-arrow {
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 50px;
+  cursor: pointer; }
+.welcome .start-arrow i {
+  font-size: 60px;
+  color: #3A3D3F;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s; }
+@media only screen and (max-width: 64em) {
+  .welcome .start-arrow i {
+    font-size: 50px; } }
+@media only screen and (max-width: 40em) {
+  .welcome .start-arrow i {
+    font-size: 40px; } }
+.welcome .start-arrow:hover i {
+  color: #A82E45; }
+
+section {
+  width: 100%;
+  height: 400px; }

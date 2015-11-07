@@ -1,0 +1,41 @@
+// 配色方案：花城往事
+$c-aurora: #C03B46;				// 极光红
+$c-pompei: #A82E45;				// 庞贝红
+$c-amber: #A76050;				// 琥珀琮
+$c-winter: #F4EBD8;				// 冬日白
+$c-inkjade: #3A3D3F;			// 墨玉色
+// 主色调
+$bg-color: $c-winter;		 	// 背景色
+$text-color: $c-inkjade;	 	// 文字色
+$accent-color: $c-aurora;	 	// 着重色
+$link-color: $c-pompei;		 	// 链接色
+$selection-color: $c-inkjade; 	// 链接选中色
+// 反色调
+$bg-color-i: $c-amber;		 	// 背景色
+$text-color-i: $c-winter;	 	// 文字色
+$accent-color-i: #f5f7f8;	 	// 着重色
+$link-color-i: #ccc;		// 链接色
+$selection-color-i: white; 	// 链接选中色
+
+body {
+	background-color: $bg-color;
+}
+
+section.theme-color {
+	background-color: $bg-color;
+	a {
+		color: $link-color;
+		&:hover {
+			color: $selection-color;
+		} 
+	}
+}
+section.inverse-color {
+	background-color: $bg-color-i;
+	a {
+		color: $link-color-i;
+		&:hover {
+			color: $selection-color-i;
+		}
+	}
+}

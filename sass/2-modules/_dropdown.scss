@@ -1,0 +1,14 @@
+.dropdown-menu {
+	background-color: $bg-color;
+	li {
+		a {
+			cursor: pointer;
+			color: $link-color;
+			&:hover {
+				color: $text-color-i;
+				background-color: $bg-color-i;
+			}
+		}
+	}
+
+}

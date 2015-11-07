@@ -1,0 +1,54 @@
+.welcome {
+	display: inline-block;
+	background: url(../img/welcome.jpg) top center;
+	background-size: cover;
+	@include bp(large-up) {
+		background-attachment: fixed;
+	}
+	width: 100%;
+	.btn-group {
+		margin: 30px auto 100px 30px;
+		@include bp(small) {
+			margin: 20px auto 100px 20px;
+		}
+		button {
+			background-color: transparent;
+			i {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.sketch {
+		@include responsive(width, 200px, 160px, 120px);
+		@include responsive(height, 200px, 160px, 120px);
+		margin: 0 auto;
+		background: url(../img/logo.svg);
+		background-size: 100% 100%;
+	}
+	h1 {
+		color: $c-inkjade;
+		@include responsive(font-size, 61px, 41px, 21px);
+		font-family: 'Rock Salt', cursive;
+		letter-spacing: 0.1em;
+	}
+	h1.sub-title {
+		font-size: 0.9em;
+	}
+	.start-arrow {
+		text-align: center;
+		margin-top: 140px;
+		margin-bottom: 50px;
+		cursor: pointer;
+		i {
+			@include responsive(font-size, 60px, 50px, 40px);
+			color: $c-inkjade;
+			@include juice-prefixer(transition, color 1s, webkit moz ms o spec);
+		}
+		&:hover {
+			i {
+				color: $c-pompei;
+			}
+		}
+	}
+}

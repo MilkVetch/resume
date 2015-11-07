@@ -1,0 +1,94 @@
+$bar-width: 30px;
+$bar-height: 5px;
+$bar-spacing: 10px;
+
+$bar-width-s: 25px;
+$bar-height-s: 4px;
+$bar-spacing-s: 8px;
+
+.hamburger-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: $bar-width;
+	height: $bar-height + $bar-spacing*2;
+	cursor: pointer;
+	@include bp(small) {
+		width: $bar-width-s;
+		height: $bar-height-s + $bar-spacing-s*2;
+	}
+}
+
+.bar,
+.bar:after,
+.bar:before {
+	width: $bar-width;
+	height: $bar-height;
+	@include bp(small) {
+		width: $bar-width-s;
+		height: $bar-height-s;		
+	}
+}
+
+.bar {
+	position: relative;
+	transform: translateY($bar-spacing);
+	@include bp(small) {
+		transform: translateY($bar-spacing-s);
+	}
+	background: $c-inkjade;
+	transition: all 0ms 300ms;
+}
+
+.bar:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	@include bp(small) {
+		bottom: $bar-spacing-s;
+	}
+	background: $c-inkjade;
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	@include bp(small) {
+		top: $bar-spacing-s;
+	}
+	background: $c-inkjade;
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+.btn-group.open {
+	.bar {
+		background: rgba(255, 255, 255, 0); 
+		&:before {
+			background-color: $c-amber;
+		}
+		&:after {
+			background-color: $c-amber;
+		}    
+	}
+
+	.bar:after {
+		top: 0;
+		transform: rotate(45deg);
+		transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+	}
+
+	.bar:before {
+		bottom: 0;
+		transform: rotate(-45deg);
+		transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+	}	
+}
+
