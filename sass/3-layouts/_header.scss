@@ -7,14 +7,51 @@
 	}
 	width: 100%;
 	.btn-group {
+		z-index: 999999;
+		float: left;
 		margin: 30px auto 100px 30px;
 		@include bp(small) {
-			margin: 20px auto 100px 20px;
+			margin: 30px auto 100px 20px;
 		}
 		button {
 			background-color: transparent;
 			i {
 				font-size: 30px;
+			}
+		}
+	}
+
+	.hire {
+		cursor: pointer;
+		float: right;
+		font-size: 30px;
+		margin-top: 20px;
+		margin-right: 20px;
+		padding: 0 20px;
+		border-radius: 5px;
+		span {
+			margin-left: 10px;
+			font-family: 'Raleway', sans-serif;
+		}
+		i,span {
+			color: $c-inkjade;
+			@include juice-prefixer(transition, all 1s, webkit moz ms o spec);
+		}
+		@include juice-prefixer(transition, all 1s, webkit moz ms o spec);
+		&:hover {
+			i,span {
+				color: $c-pompei;
+				font-style: italic;
+			}
+			i {
+				transform: rotate(10deg);
+				-webkit-transform: rotate(10deg);
+			}
+		}
+		@include bp(small) {
+			margin-right: 0px;
+			span {
+				display: none;
 			}
 		}
 	}

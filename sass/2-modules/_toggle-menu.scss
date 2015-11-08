@@ -71,12 +71,6 @@ $bar-spacing-s: 8px;
 .btn-group.open {
 	.bar {
 		background: rgba(255, 255, 255, 0); 
-		&:before {
-			background-color: $c-amber;
-		}
-		&:after {
-			background-color: $c-amber;
-		}    
 	}
 
 	.bar:after {

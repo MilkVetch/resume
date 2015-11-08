@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.js"></script>
@@ -30,26 +31,35 @@
       <header>
         <div class="welcome">
           <div class="header-menu">
-            <div class="btn-group">
-              <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
-                <div class="hamburger-menu">
-                  <div class="bar"></div> 
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="btn-group menu-btn">
+                  <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
+                    <div class="hamburger-menu">
+                      <div class="bar"></div> 
+                    </div>
+                  </button>
+                  <ul role="menu" class="dropdown-menu">
+                    <li><a onclick="$('header').animatescroll();">Hello!</a></li>
+                    <li><a class="menu-about">About Me</a></li>
+                    <li><a onclick="$('.part2').animatescroll();">Skill and Abilities</a></li>
+                    <li><a onclick="$('.part3').animatescroll();">Education</a></li>
+                    <li><a onclick="$('.part4').animatescroll();">Work Experience</a></li>
+                    <li><a onclick="$('.part5').animatescroll();">Portfolio</a></li>
+                    <li><a onclick="$('.part6').animatescroll();">Social Networks</a></li>
+                    <li><a onclick="$('.part7').animatescroll();">Contact Me</a></li>
+                  </ul>
                 </div>
-              </button>
-              <ul role="menu" class="dropdown-menu">
-                <li><a onclick="$('header').animatescroll();">Hello!</a></li>
-                <li><a onclick="$('.part1').animatescroll();">About Me</a></li>
-                <li><a onclick="$('.part2').animatescroll();">Skill and Abilities</a></li>
-                <li><a onclick="$('.part3').animatescroll();">Education</a></li>
-                <li><a onclick="$('.part4').animatescroll();">Work Experience</a></li>
-                <li><a onclick="$('.part5').animatescroll();">Portfolio</a></li>
-                <li><a onclick="$('.part6').animatescroll();">Social Networks</a></li>
-                <li><a onclick="$('.part7').animatescroll();">Contact Me</a></li>
-              </ul>
+                <div class="hire" data-toggle="tooltip copy" data-placement="bottom" title="(+64) 022 166 8009">
+                  <i class="fa fa-phone"></i>
+                  <span>Hire Me Now!</span>
+                </div>          
+              </div>
             </div>
+
           </div>
           <div class="sketch"></div>
-          <h1 class="text-center">Discover</h1>
+          <h1 class="text-center sketch-title">Discover</h1>
           <h1 class="text-center sub-title">Miracle & Valuable</h1>
           <div class="start-arrow">
             <i class="fa fa-angle-down"></i>
@@ -59,27 +69,64 @@
       </header>
 
       <main>
+
+
         <section class="part1 theme-color">
-          <a href="#">milk</a>
+          <div class="row">
+            <div class="col-md-12">
+              <h1>About Me</h1>
+            </div>
+          </div>
         </section>
+
         <section class="part2 inverse-color">
-          <a href="#">milk</a>
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Skill and Abilities</h1>
+            </div>
+          </div>
         </section>
+
         <section class="part3 theme-color">
-          <a href="#">milk</a>
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Education</h1>
+            </div>
+          </div>
         </section>
+
         <section class="part4 inverse-color">
-          <a href="#">milk</a>
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Work Experienc</h1>
+            </div>
+          </div>
         </section>
+
         <section class="part5 theme-color">
-          <a href="#">milk</a>
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Portfolio</h1>
+            </div>
+          </div>
         </section>
+
         <section class="part6 inverse-color">
-          <a href="#">milk</a>
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Social Networks</h1>
+            </div>
+          </div>
         </section>
+
         <section class="part7 theme-color">
-          <a href="#">milk</a>
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Contact Me</h1>
+            </div>
+          </div>
         </section>
+
       </main>
 
       <footer>

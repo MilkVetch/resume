@@ -23,6 +23,9 @@ body {
 
 section.theme-color {
 	background-color: $bg-color;
+	h1 {
+		color: $text-color;
+	}
 	a {
 		color: $link-color;
 		&:hover {
@@ -32,6 +35,9 @@ section.theme-color {
 }
 section.inverse-color {
 	background-color: $bg-color-i;
+	h1 {
+		color: $text-color-i;
+	}
 	a {
 		color: $link-color-i;
 		&:hover {
