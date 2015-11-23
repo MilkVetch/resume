@@ -12,22 +12,33 @@
 	var part5 = $('.part5').offset().top;
 	var part6 = $('.part6').offset().top;
 	var part7 = $('.part7').offset().top;
-
+	var part1s = part1 - 88;
 // start-arrow
 	$('.menu-about').click(function() {
-		if ($(window).scrollTop() > part1) {
-			$('.part1').animatescroll();
-		} else {
-			$('.part1').animatescroll({padding:75});
-		}
+		$('.part1').animatescroll();
 	});
 	$('.start-arrow').click(function() {
-		if ($(window).scrollTop() > part1) {
-			$('.part1').animatescroll();
-		} else {
-			$('.part1').animatescroll({padding:75});
-		}
+		$('.part1').animatescroll();
 	});	
+// menu 
+	$('.menu-skill').click(function() {
+		$('.part2').animatescroll();
+	});
+	$('.menu-education').click(function() {
+		$('.part3').animatescroll();
+	});
+	$('.menu-work').click(function() {
+		$('.part4').animatescroll();
+	});
+	$('.menu-portfolio').click(function() {
+		$('.part5').animatescroll();
+	});
+	$('.menu-social').click(function() {
+		$('.part6').animatescroll();
+	});
+	$('.menu-contact').click(function() {
+		$('.part7').animatescroll();
+	});
 // Scroll Effect
 	$(window).scroll(function(){
 		var wScroll = $(this).scrollTop();
@@ -51,11 +62,11 @@
 				'opacity': opacity
 			});
 
-		// MENU
-			if ( wScroll >= $('.start-arrow').offset().top) {
-				$('.menu-btn').css('position','fixed').addClass('animated bounce');
-			} else {
-				$('.menu-btn').css('position','relative').removeClass('animated bounce');
-			}
+		// // MENU
+		// 	if ( wScroll >= $('.start-arrow').offset().top) {
+		// 		$('.menu-btn').css('position','fixed').addClass('animated bounce');
+		// 	} else {
+		// 		$('.menu-btn').css('position','relative').removeClass('animated bounce');
+		// 	}
 
 	});

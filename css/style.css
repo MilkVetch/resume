@@ -112,6 +112,7 @@ section.inverse-color a:hover {
   .welcome {
     background-attachment: fixed; } }
 .welcome .btn-group {
+  position: fixed;
   z-index: 999999;
   float: left;
   margin: 30px auto 100px 30px; }
@@ -122,6 +123,8 @@ section.inverse-color a:hover {
   background-color: transparent; }
 .welcome .btn-group button i {
   font-size: 30px; }
+.welcome .head-pad {
+  padding-bottom: 60px; }
 .welcome .hire {
   cursor: pointer;
   float: right;
@@ -159,6 +162,7 @@ section.inverse-color a:hover {
 .welcome .sketch {
   width: 200px;
   height: 200px;
+  margin-top: 160px;
   margin: 0 auto;
   background: url(../img/logo.svg);
   background-size: 100% 100%; }
